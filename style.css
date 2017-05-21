@@ -1,4 +1,37 @@
 /*Global styles*/
 * {
-
+  font-family: 'Abel', sans-serif;
+  background-color: #FFF;
 }
+
+/*Header styles*/
+header div headerlogo {
+  display:inline-block;
+}
+
+header p:nth-child(2){
+  font-family: 'Yellowtail', cursive;
+}
+
+header p:nth-child(3){
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+}
+
+header img {
+  display: inline-block;
+}
+
+/*body styling starts*/
+.stripeyline {
+  background-color: gray;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+
+/*Note to self: button color: #bb7056*/
+/*Fonts:
+font-family: 'Abel', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Yellowtail', cursive;
+font-family: 'Droid Serif', serif;
+*/
