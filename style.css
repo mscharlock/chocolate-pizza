@@ -96,6 +96,31 @@ h1 {
   height: 600px;
 }
 
+.instructions > p {
+  font-family: Georgia;
+  /*Note: I think there is funky kerning on the font or something*/
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-indent: 20px;
+  letter-spacing: 0.65px;
+  line-height: 1.2;
+}
+
+.recipe > img {
+  position: relative;
+}
+
+.columnright, .columnleft {
+  float: right;
+  position: absolute;
+  background-color: none;
+}
+
+
+.strike {
+  text-decoration: line-through;
+}
+
 
 /*Note to self: button color: #bb7056*/
 /*Fonts:
