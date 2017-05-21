@@ -97,8 +97,8 @@ h1 {
 }
 
 .instructions > p {
-  font-family: Georgia;
-  /*Note: I think there is funky kerning on the font or something*/
+  font-family: 'Droid Serif', serif;
+  font-weight: lighter;
   margin-top: 15px;
   margin-bottom: 25px;
   text-indent: 20px;
@@ -106,19 +106,77 @@ h1 {
   line-height: 1.2;
 }
 
-.recipe > img {
-  position: relative;
+.recipe > ol > li {
+  text-indent: 80px;
+  line-height: 1.9;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: darkolivegreen;
+  background-color: rgba(255,255,255,0)
 }
 
-.columnright, .columnleft {
+.recipe > img {
+  position: relative;
+  z-index: 9;
   float: right;
+}
+
+.columnleft {
+  margin-top: 40px;
   position: absolute;
-  background-color: none;
+  float: right;
+  z-index: 999999999999;
+  background-color: rgba(255,255,255,0);
+}
+
+.columnright {
+  margin-top: 40px;
+  float: right;
+  margin-left: 400px;
+  position: absolute;
+  z-index: 9999;
+  background-color: rgba(255,255,255,0);
 }
 
 
 .strike {
   text-decoration: line-through;
+}
+
+/*.endblurb {
+
+}*/
+
+.bio {
+  position: relative;
+  display: inline-block;
+  width: 560px;
+}
+
+.bio > img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.bio > p {
+  margin-top: 10px;
+}
+
+h3 {
+  display: inline-block;
+  font-family: 'Droid Serif', serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.share {
+  position: relative;
+  background-color: #bb7056;
+  color: white;
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
 }
 
 
