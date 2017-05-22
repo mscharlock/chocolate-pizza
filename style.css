@@ -1,7 +1,6 @@
 /*Global styles*/
 * {
   font-family: 'Abel', sans-serif;
-  background-color: #FFF;
 }
 
 .clearfix {
@@ -26,13 +25,17 @@ header {
   margin-right: 350px;
 }
 
-.socialmedia, .rssemail > ol {
-  display: inline-block;
-  float: left;
+.socialmedia > ol {
+  float: right;
 }
 
-.socialmedia, .rssemail > li{
-  display:inline-block;
+.socialmedia li {
+  float: left;
+  margin: 2px;
+}
+
+.socialmedia li.lastone {
+  margin-right: 10px;
 }
 
 header .fork {
@@ -57,10 +60,12 @@ header p:nth-child(3){
 
 /*body styling starts*/
 
-div > .stripeyline {
-  background-color: gray;
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+.stripeyline {
+  margin: 20px 0;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgb(211, 211, 211) 1px, rgb(219, 219, 219) 3px);
+  height: 10px;
 }
+
 .titleline {
   display:inline-block;
   margin-bottom: 20px;
@@ -71,6 +76,7 @@ h1 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 7px;
+  margin-top: 20px;
 }
 
 .print {
@@ -88,6 +94,7 @@ h1 {
 
 .print > p {
   display: inline-block;
+  color: grey;
   text-transform: uppercase;
 }
 
@@ -137,14 +144,17 @@ h1 {
   background-color: rgba(255,255,255,0);
 }
 
-
-.strike {
+input[type="checkbox"]:checked ~ span {
   text-decoration: line-through;
 }
 
-/*.endblurb {
+label {
+  background-color: transparent;
+}
 
-}*/
+.endblurb > div, button {
+  display: inline-block;
+}
 
 .bio {
   position: relative;
@@ -160,6 +170,7 @@ h1 {
 
 .bio > p {
   margin-top: 10px;
+  font-family: 'Abel', serif;
 }
 
 h3 {
@@ -172,6 +183,9 @@ h3 {
 
 .share {
   position: relative;
+  float: right;
+  font-family: 'Abel', serif;
+  margin-top: 20px;
   background-color: #bb7056;
   color: white;
   width: 150px;
@@ -179,6 +193,28 @@ h3 {
   text-transform: uppercase;
 }
 
+footer {
+  margin: 0 auto;
+  text-align: center;
+  color: gray;
+  font-family: 'Abel', serif;
+}
+
+footer .hrimage {
+  height: 2px;
+  background: grey;
+  overflow: visible;
+  margin: 30px 0;
+}
+
+footer .hrimage img {
+  margin-top: -15px;
+}
+
+.footertext {
+  line-height: 1.2;
+  margin-top: 20px;
+}
 
 /*Note to self: button color: #bb7056*/
 /*Fonts:
